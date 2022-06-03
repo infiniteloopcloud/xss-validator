@@ -30,7 +30,7 @@ func TestValidatorVulnerableList(t *testing.T) {
 		input := scanner.Text()
 		err := Validate(input, DefaultRules...)
 		if err == nil {
-			t.Fatalf("Line: %d, input: %s", line, input)
+			t.Errorf("Line: %d, input: %s", line, input)
 		}
 	}
 }
@@ -59,21 +59,6 @@ func TestValidateForRightData(t *testing.T) {
 	valueTester(t, gofakeit.ChromeUserAgent)
 	valueTester(t, gofakeit.SafariUserAgent)
 	valueTester(t, gofakeit.BitcoinAddress)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
-	valueTester(t, gofakeit.StreetNumber)
 }
 
 func valueTester(t *testing.T, fn func() string) {

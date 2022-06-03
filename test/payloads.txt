@@ -6479,7 +6479,6 @@ a="get";
 <div id="98"><div id=d><div style="font-family:'sans\27\2F\2A\22\2A\2F\3B color\3Ared\3B'">X</div></div>
 <script>with(document.getElementById("d"))innerHTML=innerHTML</script>//["'`-->]]>]</div>
 <div id="99">XXX<style>
-*{color:gre/**/en !/**/important} /* IE 6-9 Standards mode */
 <!--
 --><!--*{color:red}   /* all UA */
 *{background:url(xx:x //**/\red/*)} /* IE 6-7 Standards mode */

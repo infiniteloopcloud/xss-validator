@@ -3,6 +3,10 @@ package xssvalidator
 var DefaultRules []Rule = []Rule{
 	//BracketRule{},
 	ForbiddenKeywords{},
+	ForbiddenHTMLUnescapeStringKeywords{},
+	ForbiddenURLQueryUnescapeKeywords{},
+	ForbiddenUnicodeKeywords{},
+	ForbiddenLowercaseKeywords{},
 }
 
 type Rule interface {
