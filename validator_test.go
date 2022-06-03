@@ -69,3 +69,14 @@ func valueTester(t *testing.T, fn func() string) {
 		}
 	}
 }
+
+func BenchmarkValidate(b *testing.B) {
+	input := `<IMG SRC="javascript:alert('XSS')"`
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		err := Validate(input, DefaultRules...)
+		if err == nil {
+			b.Error(err)
+		}
+	}
+}
