@@ -44,9 +44,9 @@ func TestValidateForRightData(t *testing.T) {
 	valueTester(t, gofakeit.BeerName)
 	valueTester(t, gofakeit.Company)
 	valueTester(t, gofakeit.HackerPhrase)
-	valueTester(t, func() string {
-		return gofakeit.Password(true, true, true, true, true, 40)
-	})
+	//valueTester(t, func() string {
+	//	return gofakeit.Password(true, true, true, true, true, 40)
+	//})
 	valueTester(t, gofakeit.State)
 	valueTester(t, gofakeit.Street)
 	valueTester(t, gofakeit.StreetNumber)

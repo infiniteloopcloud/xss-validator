@@ -1,7 +1,6 @@
 package xssvalidator
 
 var DefaultRules []Rule = []Rule{
-	//BracketRule{},
 	ForbiddenKeywords{},
 	ForbiddenHTMLUnescapeStringKeywords{},
 	ForbiddenURLQueryUnescapeKeywords{},
