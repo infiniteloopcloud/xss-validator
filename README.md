@@ -11,21 +11,19 @@ go get github.com/infiniteloopcloud/xss-validator
 ```go
 package main
 
-import (
-	"github.com/infiniteloopcloud/xss-validator"
-)
+import xssvalidator "github.com/infiniteloopcloud/xss-validator"
 
 func main() {
 	err := xssvalidator.Validate("input_data", xssvalidator.DefaultRules...)
 	if err != nil {
 		// rule triggered
-    }
-	
-	// or use selected 
+	}
+
+	// or use selected
 	err = xssvalidator.Validate("input_data", []xssvalidator.Rule{
 		xssvalidator.ForbiddenKeywords{},
 		xssvalidator.ForbiddenHTMLUnescapeStringKeywords{},
-    }...)
+	}...)
 	if err != nil {
 		// rule triggered
 	}
@@ -43,7 +41,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/infiniteloopcloud/xss-validator"
+	xssvalidator "github.com/infiniteloopcloud/xss-validator"
 )
 
 var _ xssvalidator.Rule = AlertRule{}
@@ -54,7 +52,7 @@ func (a AlertRule) Check(v string) error {
 	if strings.Contains(v, "alert") {
 		return errors.New("contains alert")
 	}
-	
+
 	return nil
 }
 ```
