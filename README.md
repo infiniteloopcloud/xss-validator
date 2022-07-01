@@ -1,5 +1,7 @@
 # XSS Validator
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/infiniteloopcloud/xss-validator)](https://goreportcard.com/report/github.com/infiniteloopcloud/xss-validator) [![GoDoc](https://godoc.org/github.com/infiniteloopcloud/xss-validator?status.svg)](https://godoc.org/github.com/infiniteloopcloud/xss-validator) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![made-with-Go](https://img.shields.io/badge/Made%20with-Go-1f425f.svg)](http://golang.org)
+
 XSS Validator on input fields. It covers all the payloads from the `test/payloads.txt`.
 
 ### Usage
